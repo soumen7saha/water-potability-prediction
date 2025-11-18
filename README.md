@@ -3,11 +3,11 @@
 
 
 ## Problem Statement
-Due to insufficient access to safe drinking water, caused by factors like microbial and chemical contamination, pollution from industrial and agricultural sources, and inadequate infrastructure, there have been widespread health problems, economic losses, and social disparities. Particularly, in developing countries such as India, water is not properly utilised for its quality. This project applies various machine learning techniques to predict the water quality. It focuses on finding water potability in a binary output(yes/no) when provided with the key factors used to calculate the water quality index for the water sample, like pH value, electrical conductivity, total organic carbon, hardness, turbidity, total dissolved solids and other salts concentration. Determining or predicting the portability of water would not only ensure access to safe drinking-water but also provide a component of effective policy for health protection.
+Due to insufficient access to safe drinking water, caused by factors like microbial and chemical contamination, pollution from industrial and agricultural sources, and inadequate infrastructure, there have been widespread health problems, economic losses, and social disparities. Particularly, in developing countries such as India, water is not properly utilised for its quality. This project applies various machine learning techniques to predict the water quality. It focuses on finding water potability in a binary output(yes/no) when provided with the key factors used to calculate the water quality index for the water sample, like pH value, electrical conductivity, total organic carbon, hardness, turbidity, total dissolved solids and other salts concentration. Determining or predicting the potability of water would not only ensure access to safe drinking-water but also provide a component of effective policy for health protection.
 
 
 ## Dataset Description
-The dataset is taken or can be downloaded from this [link](https://www.kaggle.com/datasets/adityakadiwal/water-potability). A copy of the dataset ([_water_potability.csv_](https://github.com/soumen7saha/water-potability-prediction/blob/main/data/water_potability.csv)) is added in the repository. It has a total 10 features with _Portability_ as the target feature consisting of only 2 values (1 for Potable and 0 for Not Portable). The columns are described and represented as:
+The dataset is taken or can be downloaded from this [link](https://www.kaggle.com/datasets/adityakadiwal/water-potability). A copy of the dataset ([_water_potability.csv_](https://github.com/soumen7saha/water-potability-prediction/blob/main/data/water_potability.csv)) is added in the repository. It has a total 10 features with _Potability_ as the target feature consisting of only 2 values (1 for Potable and 0 for Not Potable). The columns are described and represented as:
 
 - pH: The pH value of the water sample, evaluating its acid-base balance 
 - Hardness: Concentration of potassium and magnesium salts in water in terms of ppm(parts per million)
@@ -18,7 +18,7 @@ The dataset is taken or can be downloaded from this [link](https://www.kaggle.co
 - Organic_carbon: Total Organic Carbon (TOC) in water comes from decaying natural organic matter (NOM) as well as synthetic sources, measured in gm/L
 - Trihalomethanes(THMs): THMs are chemicals which may be found in water treated with chlorine, given as units of mg/L
 - Tubidity: Measure of light emitting properties of water, indicating the quality of waste discharge with respect to colloidal matter in terms of NTU (Nephelometric Turbidity Unit)
-- Portability: Indicates if the water is safe for human consumption, ∈ {1,0}
+- Potability: Indicates if the water is safe for human consumption, ∈ {1,0}
 
 
 ## EDA Summary
