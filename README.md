@@ -45,7 +45,7 @@ The dataset is taken or can be downloaded from this [link](https://www.kaggle.co
 | Random Forest Classifier | max_depth=10, n_estimators=150, random_state=28, n_jobs=-1 | 0.634 | 0.585 |
 | XGBoost | eta': 1.0, 'max_depth': 10, 'min_child_weight': 3, 'objective': 'binary:logistic', 'eval_metric': 'auc', 'nthread': 8, 'seed': 1, 'verbosity': 1 | 1.0 | 0.62 |
 
-The model with the maximum roc_auc_score is selected as final, re-trained on full train dataset and exported to Model.bin
+The model with the maximum roc_auc_score is selected as final, re-trained on full train dataset and exported to _./models/Model.bin_
 
 
 ## How to run locally?
