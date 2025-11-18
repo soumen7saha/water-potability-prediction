@@ -105,15 +105,15 @@ Different classification based ML models are trained and evaluated on the basis 
 
         uv sync
 
-- Activate the uv environment
+- To activate the uv virtual environment, run
     
         source .venv/bin/activate
 
 - Make sure the port _9696_ is not allocated to any process
     
-- Run
+- Run the below command to start the project
     
-        python ./main.py
+        uv run main.py
 
 
 ## How to run via Docker?
