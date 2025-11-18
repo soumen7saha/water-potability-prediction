@@ -23,9 +23,9 @@ The dataset is taken or can be downloaded from this [link](https://www.kaggle.co
 
 ## EDA Summary
 - Data Cleaning and Preprocessing:
-    Handling Missing Values: All the rows containing any null values are dropped and the dataset has been reduced to 2011 rows. 
+    Handling Missing Values: All the rows containing any null values are dropped and the dataset has been reduced to 2011 rows. The dataset is split into train/val/test datasets at 60%/20%/20%. The EDA is performed on the full training dataset (80%) 
 - Univariate Analysis: 
-    The dataset has around 1200 (around 60%) rows with Potability value 0 and 811 (40%) rows with value 1. The mutual information score for all the features with respect to the target variable is equal and independently correlated with it. The distribution of all the features are normal and not skewed, hence the outliers are kept intact.
+    The dataset has around 1200 (around 60%) rows with Potability value 0 and 811 (40%) rows with value 1. The mutual information score for all the features with respect to the target variable is equal and independently correlated with it. The distribution of all the features are normal and not highly skewed, hence the outliers are kept intact.
 - Bivariate Analysis:
     No two feature columns are correlated to each other, all are independent to each other. The correlation value ranges from 0 to 0.1
 - Visualizations:
@@ -45,7 +45,7 @@ The dataset is taken or can be downloaded from this [link](https://www.kaggle.co
 | Random Forest Classifier | max_depth=10, n_estimators=150, random_state=28, n_jobs=-1 | 0.634 | 0.585 |
 | XGBoost | eta': 1.0, 'max_depth': 10, 'min_child_weight': 3, 'objective': 'binary:logistic', 'eval_metric': 'auc', 'nthread': 8, 'seed': 1, 'verbosity': 1 | 1.0 | 0.62 |
 
-The model with the maximum roc_auc_score is selected as final, re-trained on full train dataset and exported to _./models/Model.bin_
+Different classification based ML models are trained and evaluated on the basis of accuracy and its performance on the validation set. The model with the maximum roc_auc_score is selected as final best model, re-trained on full train dataset and exported to [models/model.bin](https://github.com/soumen7saha/water-potability-prediction/blob/main/models/model.bin)
 
 
 ## How to run locally?
