@@ -111,7 +111,7 @@ Different classification based ML models are trained and evaluated on the basis 
 
 - Make sure the port _9696_ is not allocated to any process
     
-- Run the below command to start the project
+- Run the below command to start the application
     
         uv run main.py
 
