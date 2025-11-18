@@ -34,7 +34,7 @@ The dataset is taken or can be downloaded from this [link](https://www.kaggle.co
     ![](/images/heat_map.png)
 
     b. Scatter Plot
-    ![](/images/scatter.plot.png)
+    ![](/images/scatter_plot.png)
 
 
 ## Modelling Approach & Metrics
@@ -109,9 +109,11 @@ The model with the maximum roc_auc_score is selected as final, re-trained on ful
 
 ## User Interface
 - User Input
+
     ![](/images/input.png)
 
 - Prediction Output
+
     ![](/images/output.png)
 
 
