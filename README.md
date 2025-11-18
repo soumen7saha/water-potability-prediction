@@ -162,7 +162,7 @@ Different classification based ML models are trained and evaluated on the basis 
 #### How to deploy at HuggingFace?
 - Login/Sign-up at HuggingFace (hf) & create a new space at https://huggingface.co/spaces
 - Edit the README.md file with basic hf configuration given at [README_hf.md](https://github.com/soumen7saha/water-potability-prediction/blob/main/README_hf.md) 
-- Replace the port with _7860_ and push all the project files to the space
+- Replace the port with _7860_ and push all the necessary project files to the space
 - HuggingFace will build and run the docker container based on the Dockerfile
 
 Cloud deployment codespace link : https://huggingface.co/spaces/soumen77/water-potability-prediction/tree/main
