@@ -27,7 +27,7 @@ The dataset is taken or can be downloaded from this [link](https://www.kaggle.co
 - Univariate Analysis: 
     The dataset has around 1200 (around 60%) rows with Potability value 0 and 811 (40%) rows with value 1. The mutual information score for all the features with respect to the target variable is equal and independently correlated with it. The distribution of all the features are normal and not highly skewed, hence the outliers are kept intact.
 - Bivariate Analysis:
-    No two feature columns are correlated to each other, all are independent to each other. The correlation value ranges from 0 to 0.1
+    No two feature columns are correlated to each other, all are independent to each other. The absolute correlation value ranges from 0 to 0.1
 - Visualizations:
      
     a. Heat Map
