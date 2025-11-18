@@ -48,10 +48,10 @@
     <br>
     {% if prediction is defined %}
         {% if prediction["potability"] %}
-            <h3>Water is Portable with a probability of {{ prediction["potability_proba"] }}</h3>
+            <h4>Given Water Sample is Potable with a Probability of {{ prediction["potability_proba"] }}</h4>
         {% endif %}
         {% if not prediction["potability"] %}
-            <h3>Water is Not Portable with a probability of {{ prediction["potability_proba"] }}</h3>
+            <h4>Given Water Sample is Not Potable with a Probability of {{ prediction["potability_proba"] }}</h4>
         {% endif %}
     {% endif %}
 
