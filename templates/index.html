@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submit Water Data</title>
+</head>
+<body>
+
+    <form action="/submit_form" method="post">
+        <label>pH:
+            <input type="number" step="any" max="14" min="0" name="ph" required>
+        </label><br><br>
+
+        <label>Hardness:
+            <input type="number" step="any" max="1000000" name="hardness" required>
+        </label><br><br>
+
+        <label>Solids:
+            <input type="number" step="any" max="1000000" name="solids" required>
+        </label><br><br>
+
+        <label>Chloramines:
+            <input type="number" step="any" max="1000000" name="chloramines" required>
+        </label><br><br>
+
+        <label>Sulfate:
+            <input type="number" step="any" max="1000000" name="sulfate" required>
+        </label><br><br>
+
+        <label>Conductivity:
+            <input type="number" step="any" max="1000000" name="conductivity" required>
+        </label><br><br>
+
+        <label>Organic Carbon:
+            <input type="number" step="any" max="1000000" name="organic_carbon" required>
+        </label><br><br>
+
+        <label>Trihalomethanes:
+            <input type="number" step="any" max="1000000" name="trihalomethanes" required>
+        </label><br><br>
+
+        <label>Turbidity:
+            <input type="number" step="any" max="1000000" name="turbidity" required>
+        </label><br><br>
+
+        <button type="submit">Predict Water Potability</button>
+    </form>
+
+    <br>
+    {% if prediction is defined %}
+        {% if prediction["potability"] %}
+            <h3>Water is Portable with a probability of {{ prediction["potability_proba"] }}</h3>
+        {% endif %}
+        {% if not prediction["potability"] %}
+            <h3>Water is Not Portable with a probability of {{ prediction["potability_proba"] }}</h3>
+        {% endif %}
+    {% endif %}
+
+</body>
+</html>
