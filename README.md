@@ -48,6 +48,48 @@ The dataset is taken or can be downloaded from this [link](https://www.kaggle.co
 Different classification based ML models are trained and evaluated on the basis of accuracy and its performance on the validation set. The model with the maximum roc_auc_score is selected as final best model, re-trained on full train dataset and exported to [models/model.bin](https://github.com/soumen7saha/water-potability-prediction/blob/main/models/model.bin)
 
 
+## Project Folder Structure
+```
+└── 📁water-potability-prediction
+    └── 📁.venv
+        └── 📁bin
+            ├── activate
+    └── 📁data
+            ├── water_potability.csv
+    └── 📁images
+    └── 📁models
+        ├── model.bin
+    └── 📁notebooks
+        ├── notebook.ipynb
+    └── 📁src
+        └── 📁scripts
+            ├── predict.py
+            ├── serve.py
+            ├── train.py
+    └── 📁templates
+        ├── index.html
+    └── 📁tests
+        ├── test.py
+    ├── .python-version
+    ├── Dockerfile
+    ├── LICENSE
+    ├── main.py
+    ├── pyproject.toml
+    ├── README.md
+    ├── requirements.txt
+    └── uv.lock
+```
+- .venv : manages the project's isolated virtual environment
+- data : stores the dataset file
+- models/model : stores the exported model bin files
+- notebooks : contains the notebook file used to tune the models
+- src/scripts : contains the python scripts file segragated from the notebook 
+- main.py : entry point to run the project
+- uv.lock : used to install all the specified packages into the project's virtual environment
+- Dockerfile : used to build the docker container
+- tests : stores python script file to test the API endpoints
+
+
 ## How to run locally?
 - Clone the Project from git
     
@@ -59,7 +101,7 @@ Different classification based ML models are trained and evaluated on the basis 
 
         pip install uv
 
-- Go to the project directory, open terminal & run
+- Go to the project directory, open terminal & run the below command to install the dependencies into the virtual environment
 
         uv sync
 
@@ -75,7 +117,7 @@ Different classification based ML models are trained and evaluated on the basis 
 
 
 ## How to run via Docker?
--   Go to the project directory in terminal and run the following commands:
+-   Go to the project directory in terminal and run the following commands to build and run the docker container:
 
         cat Dockerfile
 	    docker build -t water-potability-prediction .
