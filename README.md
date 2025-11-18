@@ -167,7 +167,7 @@ Different classification based ML models are trained and evaluated on the basis 
 
 Cloud deployment codespace link : https://huggingface.co/spaces/soumen77/water-potability-prediction/tree/main
 
-    ![](/images/cloud2.png)
+![](/images/cloud2.png)
 
 URL : https://huggingface.co/spaces/soumen77/water-potability-prediction 
 
